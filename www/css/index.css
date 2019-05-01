@@ -1,0 +1,362 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+select::-ms-expand { /* for IE 11 */
+    display: none;
+}
+/*map*/
+#map {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+}
+#custom-control-end-button{
+	background-color: #ffffff; /* White */
+	padding: 3px 10px;
+	font-size: 14px;
+	border-radius: 4px;
+}
+#custom-control-time{
+	padding: 3px;
+}
+.custom-control-correct{
+	background-image: url('correct_icon.png');
+	background-size: cover;
+	width:15px;
+	height:15px;
+	display: inline-block;
+}
+.custom-control-incorrect{
+	background-image: url('incorrect_icon.png');
+	background-size: cover;
+	width:15px;
+	height:15px;
+	display: inline-block;
+}
+.custom-control-text{
+	display: inline-block;
+	position:relative;
+	top:-3px;
+}
+/*marker*/
+.marker {
+  background-image: url('marker.png');
+  background-size: cover;
+  width: 35px;
+  height: 53px;
+  cursor: pointer;
+}
+.marker-fail {
+	background-image: url('marker_fail.png');
+	background-size: cover;
+	width: 35px;
+	height: 53px;
+	cursor: pointer;
+}
+.marker-success {
+	background-image: url('marker_success.png');
+	background-size: cover;
+	width: 35px;
+	height: 53px;
+	cursor: pointer;
+}
+/*Question popup*/
+.questionPopup{
+	position: absolute;
+	background: white;
+	z-index: 1000;
+	width: 100%;
+	height: 100%;
+}
+#close{
+	float: right;
+	display: inline-block;
+	padding: 10px 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+	cursor: pointer;
+}
+.title_div{
+	text-align : center;
+	font-weight: bold;
+	font-size: 24px;
+	margin-top: 50px;
+}
+.text_div{
+	padding-left:25px;
+	padding-right:25px;
+	text-align: center;
+}
+.question_div{
+	text-align : center;
+	font-weight: bold;
+	font-size: 24px;
+	margin-top: 50px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.image_div{
+	padding-left:10px;
+	padding-right:10px;
+}
+.question_img{
+	width: 500px;
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 50px;
+}
+#answer_info{
+	text-align:center;
+	font-weight:bold;
+	height:18px;
+	padding:10px;
+}
+.answer_div{
+	text-align:center;
+}
+.answer_btn{
+	height:100px;
+	width:250px;
+	position: relative;
+	vertical-align:top;
+	
+	margin:10px;
+	background-color: #146db7; /* Blue */
+	border: none;
+	color: white;
+	/*padding: 15px 32px;*/
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 14px;
+	border-radius: 4px;
+}
+#easy_answer{
+	margin:20px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+/*main-menu*/
+.wrap{
+	text-align: center;
+}
+.title{
+	text-decoration: none;
+	display: inline-block;
+	font-size: 36px;
+	font-weight:bold;
+	margin-bottom:50px;
+	margin-top:80px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.menu-btn{
+	background-color: #4CAF50; /* Green */
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	border-radius: 4px;
+	width:250px;
+	margin-bottom:10px;
+}
+#category-selector{
+	margin:20px;
+}
+.cat_list_wrap{
+	margin:10px;
+	width:250px;
+	display: inline-block;
+}
+.selected_text{
+	float:left;
+}
+.cat_selector_remove{
+	color: red;
+	float:right;
+}
+@media only screen and (max-width: 349px) {
+	.add_btn{
+		margin-right: 20px;
+		margin-top: 20px;
+	}
+}
+.add_btn{
+	background-color: DodgerBlue;
+	border: none;
+	color: white;
+	border-radius: 4px;
+	padding: 10px 15px;
+	margin-left: 20px;
+}
+#game-mode-menu-selector {
+	margin-bottom: 20px;
+}
+.game-mode-description {
+	padding-right: 20px;
+	padding-left: 20px;
+	margin-bottom: 20px;
+}
+/*loading*/
+#loading{
+	position: absolute;
+	background: white;
+	z-index: 1000;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+#loader{
+	max-width: 50%;
+	line-height: 1.4;
+	font-size: 1.2rem;
+	font-weight: bold;
+	text-align: center;	
+}
+
+.loading__anim {
+  text-align:center;
+  width: 35px;
+  height: 35px;
+  border:  5px solid rgba(189,189,189 ,0.25);
+  border-left-color: rgba(3,155,229 ,1);
+  border-top-color: rgba(3,155,229 ,1);
+  border-radius: 50%;
+  display: inline-block;
+  animation: rotate 600ms infinite linear;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(1turn)
+  }
+}
+/*end screen*/
+#end_screen{
+	text-align:center;
+}
+#end_title{
+	font-weight: bold;
+	font-size: 24px;
+	margin-top: 50px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#end_text{
+	margin-top:20px;
+}
+#end_questions{
+	margin-bottom:40px;
+}
+.end_answers{
+	border: none;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	border-radius: 4px;
+	width:250px;
+	margin:0px;
+}
+.endPopUp{
+	
+}
+.end_button{
+	background-color: #4CAF50; /* Green */
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	border-radius: 4px;
+	width:250px;
+	margin-bottom:10px;
+}
+/* dropdown menu */
+/* The container must be positioned relative: */
+.category-select {
+	position: relative;
+	width:220px;
+	display:inline-block;
+}
+.game-mode-selector {
+	position: relative;
+	width:220px;
+	display:inline-block;
+}
+.game-mode-selector select {
+	display: none; /*hide original SELECT element: */
+}
+.category-select select {
+  display: none; /*hide original SELECT element: */
+}
+
+.select-selected {
+  background-color: DodgerBlue;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  background-color: DodgerBlue;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}

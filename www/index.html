@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'/>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover'/>
+	
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<title>Tallinn Towers</title>
+</head>
+<body>
+<div class="app">
+	<!-- TITLE -->
+	<div class="wrap"><a class="title"></a><br></div>
+	<!-- MAIN MENU -->
+	<div id="main-menu" class="wrap">
+		<button class="play_btn menu-btn" onclick="game()"></button><br>
+		<button class="settings_btn menu-btn" onclick="settings()"></button>
+	</div>
+	<!-- GAME MENU -->
+	<div id="game-menu" class="wrap" style="display:none;">
+		<button class="new_game menu-btn" onclick="mode_menu()"></button><br>
+		<button class="continue menu-btn" onclick="start_game()"></button><br>
+		<button class="back_btn menu-btn" onclick="back_game()"></button>
+	</div>
+	<!-- GAME MODE -->
+	<div id="game-mode-menu" class="wrap" style="display:none;">
+		<div id="game-mode-menu-selector"></div>
+		<div class="game-mode-description" style="display:none"></div><br style="display:none">
+		<button class="mode_start menu-btn" onclick="new_game()" style="display:none"></button><br style="display:none">
+		<button class="back_btn menu-btn" onclick="back_mode()"></button>
+	</div>
+	<!-- SELECT GAME -->
+	<div id="select-game" class="wrap" style="display:none">
+		<div class="selected-count"></div>
+		<div id="category-selector"></div>
+		<button class="start_btn menu-btn" onclick="start_game('new')" style="display:none;"></button><br>
+		<button class="back_btn menu-btn" onclick="back_select();selected_category_count = 0;selected_categories = [];"></button>
+	</div>
+	<!-- MAIN SETTINGS -->
+	<div id="main-settings" class="wrap" style="display:none;">
+		<button class="language_btn menu-btn" onclick="language()"></button><br>
+		<button class="back_btn menu-btn" onclick="back_settings()"></button>
+	</div>
+	<!-- LANGUAGE SETTINGS -->
+	<div id="language-setting" class="wrap" style="display:none;">
+        <button class="english_btn menu-btn" onclick="language_select('en')">ENGLISH</button><br>
+        <button class="eesti_btn menu-btn" onclick="language_select('et')">EESTI</button><br>
+		<button class="back_btn menu-btn" onclick="back_language()"></button>
+    </div>
+</div>
+<!-- route -->
+<script type="text/javascript" src='data/routes/full_route.json'></script>
+<!-- Script -->
+<script type="text/javascript" src='js/index.js'></script>
+<script type="text/javascript" src='cordova.js'></script>
+</body>
+</html>

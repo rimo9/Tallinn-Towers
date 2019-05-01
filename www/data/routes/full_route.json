@@ -1,0 +1,576 @@
+full_route = [
+	{
+		"name":{"en" : "Long Leg Gate Tower", "et" : "Pika jala väravatorn"},
+		"text":{"en" : "<p>Drawing made by Tallinn Engineering Brigade in 1738 (Zobel, R. 1980, pg. 179)</p><p>Long Leg Gate is one of two gates between up town and downtown. Created 1388, height 11m. Currently occupied by private art studios.</p>","et" : "<p>Tallinna Inseneride Brigaadi joonis aastast 1738 (Zobel, R. 1980, lk. 179)</p><p>Pika jala värav on üks kahest väravast ülemlinna ja alamlinna vahel. Ehitatud 1388, kõrgus 11m. Hetkel hõivatud privaatse kunstistuudio poolt.</p>"},
+		"question":{"en": "Old folks say: 'Tallinn has a limp.' Why?", "et": "Vanarahvas ütleb: 'Tallinn lonkab.' Miks?"},
+		"answers":{
+			"answer_1":{"en":"Head doesn't know what limbs are doing", "et":"Pea ei tea mida jäsemed teevad"},
+			"answer_2":{"en":"Because of traumatic childhood (history)", "et":"Traumaatilise lapsepõlve tõttu (ajalugu)"},
+			"answer_3":{"en":"One leg is long and other is short", "et":"Üks jalg on pikk ja teine on lühikene"}
+		},
+		"correct_answer": "3",
+		"latlng":[24.742688, 59.437692],
+		"img" : "data/pictures/01Pikk.png",
+		"category_loc":{"en" : "West wall towers", "et" : "Lääne müüri tornid"}
+	},
+	{
+		"name":{"en" : "Tower behind Almshouse", "et" : "Seegitagune torn"},
+		"text":{"en" : "<p>Drawing made by Tallinn Engineering Brigade in 1738 (Zobel, R. 1980, pg. 179)</p><p>Tower behind Almshouse was a small (diameter 6.8 m) tower between the Toompea and downtown. Approximate location was the Koort’s deer statue in the park in the corner of Nunne and Lai street. Created in 1450, demolished in 19’th century.</p>","et" : "<p>Tallinna Inseneride Brigaadi joonis 1738 (Zobel, R. 1980, lk. 179)</p><p>Seegitagune torn oli väike (diameeter 6,8m) torn Toompea ja alamlinna vahel. Nunne ja Laia tänava nurgal olevas pargis Koorti metskitse skulptuur oli torni umbmäärane asukoht. Ehitatud 1450 ja lammutatud 19. sajandil.</p>"},
+		"question":{"en": "What is almshouse?", "et": "Mis on Seegi maja?"},
+		"answers":{
+			"answer_1":{"en":"Whore house", "et":"Bordell"},
+			"answer_2":{"en":"Medieval version of supermarket with lowerst prices", "et":"Keskaegne versioon supermarketist madalaimate hindadega"},
+			"answer_3":{"en":"Shelter for poor people", "et":"Varjupaik vaestele"}
+		},
+		"correct_answer": "3",
+		"latlng": [24.742852, 59.438047],
+		"img" : "data/pictures/02Seegi.png",
+		"category_loc":{"en" : "West wall towers", "et" : "Lääne müüri tornid"}
+	},
+	{
+		"name":{"en" : "Tower behind Sauna", "et" : "Saunatagune torn"},
+		"text":{"en" : "<p>Drawing made by Tallinn Engineering Brigade in 1738 (Zobel, R. 1980, pg. 222)</p><p>Tower behind Sauna was a situated between the Toompea and downtown. Created 1491–1493, height 19m. Partly demolished and integrated with the Nunne 9 building.</p>","et" : "<p>Tallinna Inseneride Brigaadi joonis 1738 (Zobel, R. 1980, lk 222)</p><p>Saunatagune torn asus Toompea ja alamlinna vahel. Ehitatud 1491-1493, 19m kõrge. Osaliselt hävitatud ja integreeritud Nunne 9 ehitisega</p>"},
+		"question":{"en": "Why was there a wall and towers between up town (Toompea) and downtown? ", "et": "Miks olid ülem- (Toompea) ja alamlinna vahel müürid ja tornid?"},
+		"answers":{
+			"answer_1":{"en":"Toompea belonged to another country", "et":"Toompea kuulus teisele riigile"},
+			"answer_2":{"en":"To test the prototype of city wall in controlled environment (in the middle of the city)", "et":"Linnamüüri prototüübi kontrollitud keskkonnas testimiseks (Linna keskel)"},
+			"answer_3":{"en":"Citizens of downtown (merchants and craftsmen) were afraid of nobleman who lived in Toompea", "et":"alamlinna elanikud (kaupmehed ja käsitöömeistrid) kartsid aadlike kes elasid Toompeal"}
+		},
+		"correct_answer": "3",
+		"latlng": [24.7425, 59.4387],
+		"img" : "data/pictures/03Saunatagune.png",
+		"category_loc":{"en" : "West wall towers", "et" : "Lääne müüri tornid"}
+	},
+	{
+		"name":{"en" : "Nun's Gate", "et" : "Nunnevärav"},
+		"text":{"en" : "<p>Model of Nun’s Gate (register.muinas.ee)</p><p>Nun's gate was a bigger set of towers and walls: one main gate tower and 2 pre-gates with 3 defense towers. Created 1355, demolished 1820 – 1868 in order to create connection between the city and rail station.</p>","et" : "<p>Mudel Nunneväravast (register.muinas.ee)</p><p>Nunnevärav oli suurem kogum tornidest ja müüridest: Ehitatud 1355, hävitatud 1820-1868, et ehitada linna  ja rongijaama vahele ühendus.</p>"},
+		"question":{"en": "In the 19th century most of the city gates were destroyed. Why?", "et": "Miks hävitati 19. sajandil enamik linna väravatest?"},
+		"answers":{
+			"answer_1":{"en":"City gates and walls generated claustrophobic feelings among citizens and only cure was tearing down the walls and gates", "et":"Linnaväravad ja müürid tekitasid klaustrofoobia tunde elanikes ja ainukeseks ravimiks oli väravate ja müüride hävitamine"},
+			"answer_2":{"en":"City guards lost the keys and only option to open the town was to break the gates", "et":"Linna valvurid kaotasid võtmed ja ainukene võimalus linna avamiseks oli väravate hävitamine"},
+			"answer_3":{"en":"Gates were very narrow and they blocked the increased traffic", "et":"Väravad olid väga kitsad ja nad blokeerisid suurenevat liiklust"}
+		},
+		"correct_answer": "3",
+		"latlng": [24.742175, 59.438750],
+		"img" : "data/pictures/04NunneVärav.png",
+		"category_loc":{"en" : "Gates", "et" : "Väravad"}
+	},
+	{
+		"name":{"en" : "Nun's Tower", "et" : "Nunnatorn"},
+		"text":{"en" : "<p>Rein Zobel’s reconstruction (Zobel, R. 1980, pg. 188)</p><p>Nun's is a typical Tallinn defense tower with the horseshoe shaped floor plan. Created 1311 – 1320. You can enter to the tower and climb up to the wall gallery – connected to Sauna and Golden leg towers.</p>","et" : "<p>Rein Zobeli rekonstruktsioon (Zobel, R. 1980, lk 188)</p><p>Nunnatorn on tüüpiline Tallina kaitsetorn hobuseraua kujulise põrandaplaaniga. Ehitatud 1311-1320. Torni saab siseneda ja ronida ülesse müüri galeriisse - ühendatud sauna ja kuldjala torniga.</p>"},
+		"question":{"en": "This tower has enormously tall first floor. What was the purpose of this room?", "et": "Sellel tornil on väga kõrge esimene korrus. Mis oli selle ruumi eesmärk?"},
+		"answers":{
+			"answer_1":{"en":"It was used for executing prisoners by pushing them down from the hole in the ceiling", "et":"Seda kasutati vangide hukkamiseks lükates neid alla läbi suure augu laes."},
+			"answer_2":{"en":"It was used as a storage room for ammunition and weaponry", "et":"Seda kasutati moona ja relvastuse laona"},
+			"answer_3":{"en":"It was used as a prison, the height of the room kept the prisoners in", "et":"Seda kasutati vangina. Ruumi kõrgus hoidis vange sees kinni"}
+		},
+		"correct_answer": "2",
+		"latlng": [24.742275, 59.439246],
+		"img" : "data/pictures/05Nunn.png",
+		"category_loc":{"en" : "West wall towers", "et" : "Lääne müüri tornid"}
+	},
+	{
+		"name":{"en" : "Sauna Tower", "et" : "Saunatorn"},
+		"text":{"en" : "<p>Rein Zobel’s drawing (Zobel, R. 1980, pg. 42)</p><p>Sauna is a console tower (construction probably inspired by Visby city wall). Created 1371–1372. Tower was renovated (ruined) in 1898. You can enter to the tower from Nun’s tower via wall gallery.</p>","et" : "<p>Rein Zobeli joonis (Zobel, R. 1980, lk 42)</p><p>Sauna on juhttorn (ehitust tõenäoliselt inspireeris Visby linnamüür). Ehitatud 1371-1372. Torn renoveeriti (rikuti) 1898. aastal. Torni saab siseneda läbi Nunnetornis asuva galerii.</p>"},
+		"question":{"en": "Why was this tower called Sauna?", "et": "Miks kutsuti seda torni Saunaks?"},
+		"answers":{
+			"answer_1":{"en":"City sauna was located nearby (outside of the city wall)", "et":"Linna saun asus selle lähedal (linnamüürist väljas)"},
+			"answer_2":{"en":"In mediaeval times it was used as a sauna", "et":"Keskajal kasutati seda saunana"},
+			"answer_3":{"en":"Sauna means tower in Estonian", "et":"Eesti keeles Sauna teine tähendus on torn"}
+		},
+		"correct_answer": "1",
+		"latlng": [24.742373, 59.439724],
+		"img" : "data/pictures/06Sauna.png",
+		"category_loc":{"en" : "West wall towers", "et" : "Lääne müüri tornid"}
+	},
+	{
+		"name":{"en" : "Golden Leg Tower", "et" : "Kuldjala torn"},
+		"text":{"en" : "<p>Rein Zobel’s drawing (Zobel, R. 1980, pg. 43)</p><p>Golden Leg is a typical Tallinn defense tower with the horseshoe shaped floor plan. Created 1311–1320, height: 22.5 m. Currently place for presentations and concerts. You can enter to the tower from Nun’s tower via wall gallery.</p>","et" : "<p>Rein Zobeli joonis (Zobel, R. 1980,  lk 43)</p><p>Kuldjala torn on tüüpiline Tallina kaitsetorn hobuseraua kujulise põrandaplaaniga. Ehitatud 1311-1320, kõrgus 22,5m. Hetkel koht esitluse ja kontsertite andmiseks. Torni saab siseneda läbi Nunnetornis asuva galerii.</p>"},
+		"question":{"en": "Why is this tower called Golden Leg?", "et": "Miks on selle torni nimi Kuldne Jalg?"},
+		"answers":{
+			"answer_1":{"en":"Tower has a golden leg shaped weathervane", "et":"Tornil on kuldse jala kujuline tuulelipp"},
+			"answer_2":{"en":"The relict of Jesus Christ - a golden leg was kept in this tower", "et":"Jeesus Kristuse reliik kuldne jalg asus selles tornis"},
+			"answer_3":{"en":"Nobody cares", "et":"Kedagi ei huvita"}
+		},
+		"correct_answer": "3",
+		"latlng": [24.742522, 59.439945],
+		"img" : "data/pictures/07Kuldjala.png",
+		"category_loc":{"en" : "West wall towers", "et" : "Lääne müüri tornid"}
+	},
+	{
+		"name":{"en" : "Tower behind Nuns", "et" : "Nunnadetagune torn"},
+		"text":{"en" : "<p>Rein Zobel’s reconstruction (Zobel, R. 1980, pg. 192)</p><p>Tower behind Nuns is a console tower (construction probably inspired by Visby city wall). Created 1372-1374.</p>","et" : "<p>Rein Zobeli rekonstruktsioon (Zobel,R. 1980, lk 192)</p><p>Nunnetagune torn on juhttorn (ehitust tõenäoliselt inspireeris Visby linnamüür). Ehitatud 1372-1374.</p>"},
+		"question":{"en": "Why this tower is called Behind Nun’s?", "et": "Miks on selle torni nimi Nunnadetagune?"},
+		"answers":{
+			"answer_1":{"en":"Cistercian monastery of St.Michael was nearby", "et":"Tsistertslaste Püha Mihkli klooster oli selle lähedal"},
+			"answer_2":{"en":"It was built by the nuns but then left behind", "et":"See ehitati nunnade poolt, kes selle peale ehitust maha jätsid"},
+			"answer_3":{"en":"It was used as a nuns’ living room", "et":"Seda kasutati nunnade eluruumina"}
+		},
+		"correct_answer": "1",
+		"latlng": [24.742997, 59.440279],
+		"img" : "data/pictures/08NunnaTaga.png",
+		"category_loc":{"en" : "North wall towers", "et" : "Põhja müüri tornid"}
+	},
+	{
+		"name":{"en" : "Loewenschede Tower", "et" : "Loewenschede torn"},
+		"text":{"en" : "<p>Drawing made by Tallinn Engineering Brigade in 1738 (Zobel, R. 1980, pg. 184)</p><p>Loewenschede is a typical Tallinn defense tower with the horseshoe shaped floor plan. Created 1373, height 24.2 m. Currently home for Asuuritorn Ceramics Store.</p>","et" : "<p>Tallinna Inseneride Brigaadi joonis 1738 (Zobel, R. 1980, lk 184)</p><p>Loewenschede on tüüpiline Tallinna kaitsetorn hobuseraua kujuline põrandaplaaniga. Ehitatud 1373, kõrgus 24,2m. Hetkel asub seal Asuurekeraamika pood.</p>"},
+		"question":{"en": "Why this tower is called Loewenschede?", "et": "Miks on selle torni nimi Loewenschede?"},
+		"answers":{
+			"answer_1":{"en":"The construction was controlled by the alderman Winant Louenschede", "et":"Ehitust juhtis raehärra Winant Louenschede"},
+			"answer_2":{"en":"The first captain of the tower was selling sheets for lovers", "et":"Torni esimene kapten müüs linu armastajatele"},
+			"answer_3":{"en":"The guards of the tower loved to chew seeds form Leuven", "et":"Torni valvuritele meeldis närida seemneid Leuvenist"}
+		},
+		"correct_answer": "1",
+		"latlng": [24.743271, 59.440481],
+		"img" : "data/pictures/09Loewenschede.png",
+		"category_loc":{"en" : "North wall towers", "et" : "Põhja müüri tornid"}
+	},
+	{
+		"name":{"en" : "Lippe Tower", "et" : "Lippe torn"},
+		"text":{"en" : "<p>Drawing made by Tallinn Engineering Brigade in 1738 (Zobel, R. 1980, pg. 84)</p><p>Lippe was a console tower. Created: 1372, Demolished: 19th century. It was a copy of Towers behind Nuns and Sauna. It was located above the Lippe passage (built 1933).</p>","et" : "<p>Tallinna Inseneride Brigaadi joonis 1738 (Zobel, R. 1980, lk 84)</p><p>Lippe on juhttorn. Ehitatud 1372. Hävitatud 19. sajandil. Tegemist oli Nunnadetaguse torni ja Saunatorni koopiaga. Asus Lippe läbipääsu peal (Ehitatud 1933)</p>"},
+		"question":{"en": "Why this tower is called Lippe?", "et": "Miks on selle torni nimi Lippe?"},
+		"answers":{
+			"answer_1":{"en":"The Estonian state flag (lipp in Estonien) was raised in the top of this tower before it was moved into Tall Herman", "et":"Eesti lipp hõisati selle torni tippu ennem selle Pika Hermani torni kolimist"},
+			"answer_2":{"en":"The first captain of the tower was Herman Van Der Lippe", "et":"Torni esimene kapten oli Herman Van Der Lippe"},
+			"answer_3":{"en":"The first captain of the tower had very thick lips", "et":"Torni esimesel kaptenil olid väga paksud huuled"}
+		},
+		"correct_answer": "2",
+		"latlng": [24.743848, 59.440587],
+		"img" : "data/pictures/10Lippe.png",
+		"category_loc":{"en" : "North wall towers", "et" : "Põhja müüri tornid"}
+	},
+	{
+		"name":{"en" : "Köismäe Tower", "et" : "Köismäe torn"},
+		"text":{"en" : "<p>Rein Zobel’s reconstruction (Zobel, R. 1980, pg 231)</p><p>Köismäe Tower is a typical Tallinn defense tower with the horseshoe shaped floor plan. Created 1360, height 26.5 m. Currently place for presentations and concerts.</p>","et" : "<p>Rein Zobeli rekonstruktsioon (Zobel, R. 1980, lk 231)</p><p>Köismäe torn on tüüpiline Tallinna kaitsetorn hobuseraua kujulise põrandaplaaniga. Ehitatud 1360, kõrgus 26,5m. Hetkel toimuvad seal esitlused ja kontsertid.</p>"},
+		"question":{"en": "Why this tower is called Köismäe (rope hill in Estonian)? ", "et": "Miks on selle torni nimi köismäe?"},
+		"answers":{
+			"answer_1":{"en":"Rope (köis) plating workshop was nearby", "et":"Köie töötlemis töökoda oli seal lähedal"},
+			"answer_2":{"en":"Tower was built on the top of the hill made from old ropes", "et":"Torn ehitati mäe tippu vanadest köitest"},
+			"answer_3":{"en":"Tower is tall and thin like a rope", "et":"Torn oli pikk ja peenike nagu köis"}
+		},
+		"correct_answer": "1",
+		"latlng": [24.744829, 59.440862],
+		"img" : "data/pictures/11Köis.png",
+		"category_loc":{"en" : "North wall towers", "et" : "Põhja müüri tornid"}
+	},
+	{
+		"name":{"en" : "Plate Tower", "et" : "Plate torn"},
+		"text":{"en" : "<p>Rein Zobel’s reconstruction (Zobel, R. 1980, pg. 116-117)</p><p>Plate is a typical Tallinn defense tower with the horseshoe shaped floor plan.  Created 1401–1410, height 24 m. Currently the tower belongs to private property.</p>","et" : "<p>Rein Zobeli rekonstruktsioon (Zobel, R. 1980, lk 116-117)</p><p>Plate on tüüpiline Tallinna kaitsetorn hobuseraua kujulise põrandaplaaniga. Ehitatud 1401-1410, kõrgus 24m. Hetkel on torn eravalduses</p>"},
+		"question":{"en": "Why this tower is called Plate?", "et": "Miks on selle torni nimi Plate?"},
+		"answers":{
+			"answer_1":{"en":"First captain of the tower was Herbord Plate", "et":"Torni esimene kapten oli Herbord Plate"},
+			"answer_2":{"en":"In mediaeval times the tower had plate shaped roof with a catapult in top of it", "et":"Keskajal oli tornil taldriku kujuline katus ja katapult selle peal"},
+			"answer_3":{"en":"From the top of the tower the city is visible like on plate", "et":"Torni tipust paistab terve linn olevat plaadil"}
+		},
+		"correct_answer": "1",
+		"latlng": [24.745415, 59.441200],
+		"img" : "data/pictures/12Plate.png",
+		"category_loc":{"en" : "North wall towers", "et" : "Põhja müüri tornid"}
+	},
+	{
+		"name":{"en" : "Epping Tower", "et" : "Eppingi torn"},
+		"text":{"en" : "<p>Drawing made by Tallinn Engineering Brigade in 1738 (Zobel, R. 1980, pg. 232)</p><p>Epping is a typical Tallinn defense tower with the horseshoe shaped floor plan. Created, 1370 – 1400, Height: 22.5. Additional information: Living History Museum is located in this tower.</p>","et" : "<p>Tallinna Inseneride Brigaadi joonis 1738 (Zobel, R. 1980, lk 232)</p><p>Epping on tüüpiline Tallinna kaitsetorn hobuseraua kujulise põrandaplaaniga. Ehitatud 1370-1400, kõrgus 22,5m. Hetkel asub tornis muuseum.</p>"},
+		"question":{"en": "Why this tower is called Epping?", "et": "Miks on selle torni nimi Epping?"},
+		"answers":{
+			"answer_1":{"en":"The construction manager was alderman Tideman Epping", "et":"Ehitust juhtis raehärra Tideman Epping"},
+			"answer_2":{"en":"The timber for building the roof of the tower was from the forest of Epping", "et":"Puit selle torni katuse ehitamiseks pärines Eppingi metsast"},
+			"answer_3":{"en":"The first tower captain was from Epping (Essex)", "et":"Torni esimene kapten oli pärit Eppingist (Essexist)"}
+		},
+		"correct_answer": "1",
+		"latlng": [24.746092, 59.441547],
+		"img" : "data/pictures/13Epping.png",
+		"category_loc":{"en" : "North wall towers", "et" : "Põhja müüri tornid"}
+	},
+	{
+		"name":{"en" : "Tower behind Grusbeke", "et" : "Grusbeke-tagune torn"},
+		"text":{"en" : "<p>Drawing made by Tallinn Engineering Brigade in 1738 (Zobel, R. 1980, pg. 126)</p><p>Tower behind Grusbeke is a typical Tallinn defense tower with the horseshoe shaped floor plan. Created: 1373 – 1414.</p>","et" : "<p>Tallinna Inseneride Brigaadi joonis 1738 (Zobel, R. 1980, lk 126)</p><p>Grusbeke-tagune torn on tüüpiline Tallinna kaitsetorn hobuseraua kujulise põrandaplaaniga. Ehitatud 1373-1414.</p>"},
+		"question":{"en": "Why this tower is called behind Grusbeke?", "et": "Miks on selle torni nimi Grusbeketagune?"},
+		"answers":{
+			"answer_1":{"en":"First attack against this tower happened while it was constructed. Workers responded to the attack by throwing the gravel.  Grusbeke means gravel peace in Swedish-Hungarian language.", "et":"Esimene rünnak torni vastu toimus selle ehitamise ajal. Töölised vastasid rünnakule kruusa loopimisega. Grusbeke tähendab kruusa Rootsi-Hungari keeles"},
+			"answer_2":{"en":"Arnd Grusbeke owned a house next to the tower", "et":"Arnd Grusbekel oli maja torni kõrval"},
+			"answer_3":{"en":"Tower was behind the goose pond", "et":"Torn oli hane tiigi taga"}
+		},
+		"correct_answer": "2",
+		"latlng": [24.748206, 59.442250],
+		"img" : "data/pictures/14Grusbeke.png",
+		"category_loc":{"en" : "North wall towers", "et" : "Põhja müüri tornid"}
+	},
+	{
+		"name":{"en" : "Renten Tower", "et" : "Renteni torn"},
+		"text":{"en" : "<p>Drawing made by Tallinn Engineering Brigade in 1738 (Zobel, R. 1980, pg. 92)</p><p>Renten was a typical Tallinn defense tower with the horseshoe shaped floor plan. Created: 1340–1355, height ~20 m, demolished 1880 in order to build house on Lai 49. Tower is partly visible in the building Lai 49 external wall.</p>","et" : "<p>Tallinna Inseneride Brigaadi joonis 1738 (Zobel, R. 1980, lk 92)</p><p>Renten oli tüüpiline Tallinna kaitsetorn hobuseraua kujulise põrandaplaaniga. Ehitatud 1340-1355, kõrgus ~20m, hävitatud 1880, et ehitada maja Lai 49 aadressile. Torn on osaliselt nähtav Lai 49 asuva ehitise välisseinas</p>"},
+		"question":{"en": "Why this tower is called Renten?", "et": "Miks on selle torni nimi Renten?"},
+		"answers":{
+			"answer_1":{"en":"Guards in this tower got higher pension (renten) then others", "et":"Selle torni valvurid said kõrgemat pensioni (renten) kui teised"},
+			"answer_2":{"en":"This tower was rented to Tallinn citizens for organizing parties during the plague ", "et":"Katku ajal renditi seda torni Tallinna elanikele pidude organiseerimiseks"},
+			"answer_3":{"en":"The construction was controlled by the alderman Aren van Renten", "et":"Ehituse eest vastutas maavanem Aren Van Renten"}
+		},
+		"correct_answer": "3",
+		"latlng": [24.747558, 59.442284],
+		"img" : "data/pictures/15Renten.png",
+		"category_loc":{"en" : "North wall towers", "et" : "Põhja müüri tornid"}
+	},
+	{
+		"name":{"en" : "Tower behind Wulfard", "et" : "Wulfardi tagune torn"},
+		"text":{"en" : "<p>Drawing made by Tallinn Engineering Brigade in 1738 (Zobel, R. 1980, pg. 198)</p><p>Tower behind Wulfard was a typical Tallinn defense tower with the horseshoe shaped floor plan. Created: 1373 – 1414, height ~20 m, demolished 1870. Remaining’s of the first flow are visible in the corner of Lai and Pikk street.</p>","et" : "<p>Tallinna Inseneride Brigaadi joonis 1738 (Zobel, R. 1980, lk 198)</p><p>Wulfardi tagune torn oli tüüpiline Tallinna kaitsetorn hobuseraua kujulise põrandaplaaniga. Ehitatud 1373-1414, kõrgus ~20m, hävitatud 1870. Allesjäänud osa on nähtav Laia ja Pikka tänava nurgas.</p>"},
+		"question":{"en": "Why this tower is called behind Wulfard?", "et": "Miks on selle torni nimi Wulfardi tagune?"},
+		"answers":{
+			"answer_1":{"en":"For the honor of Wulfard Rosendal who was a mayor (bürgermeister) of Turu (Abo) and owned a land next to the tower", "et":"Wulfard Rosendali auks. Ta oli Turu (Abo) linnapea (bürgmeister) ja talle kuulus torni kõrval olev maa"},
+			"answer_2":{"en":"The wolf yard was next to the tower. Wolfs’ meat was well know delicacy in mediaeval times", "et":"Hundiaed oli torni kõrval. Hundiliha oli tuntud delikatess keskajal"},
+			"answer_3":{"en":"Tower guards used to play wolf augmented reality defense (ARD) games on their spare time ", "et":"Torni valvurid mängisid vabal ajal Hundi liitreaalseid kaitsemänge"}
+		},
+		"correct_answer": "1",
+		"latlng": [24.748224, 59.441934],
+		"img" : "data/pictures/16Wulfard.png",
+		"category_loc":{"en" : "North wall towers", "et" : "Põhja müüri tornid"}
+	},
+	{
+		"name":{"en" : "Great Coastal Gate", "et" : "Suur Rannavärav"},
+		"text":{"en" : "<p>Rein Zobel’s reconstruction (Zobel, R. 1980)</p><p>Great Coastal Gate was a bigger set of towers and walls: one main gate tower and 1 pre-gate with 2 defense towers. Main gate was built 1359, Fat Margaret was built in 1518–1529 (diameter 25 m). Main gate was demolished in 1782. Fat Margaret is currently a Maritime museum.</p>","et" : "<p>Rein Zobeli rekonstruktsioon (Zobel, R. 1980)</p><p>Suur Rannavärav oli suurim tornide ja müüride komplekt, Üks põhi väravatorn, üks eelvärav ja 2 kaitsetorni. Põhi värav ehitati 1359, Paks Margareeta ehitati 1518-1529 (25m diameeter). Põhi värav hävitati 1782. Paks margareeta on hetkel meremuuseumis</p>"},
+		"question":{"en": "Original name of the fat tower was Rosencrantz. It was called Fat Margaret since 1842. Why?", "et": "Paksu torni originaalne nimi oli Rosencrantz. Miks kutsuti alates 1842. aastast seda Paksuks Margareetaks?"},
+		"answers":{
+			"answer_1":{"en":"It was Russian navy storage room and sailors went in and out", "et":"See oli Venemma mereväe ladu ja madrused käisid sees ja väljas"},
+			"answer_2":{"en":"It was prison and Fat Margaret was a director of the prison", "et":"See oli vangla ja Paks Margareeta oli selle vangla juhataja"},
+			"answer_3":{"en":"Alderman who was responsible for building this tower had a wife who’s nickname was Fat Margaret", "et":"Maavanemal, kes selle torni ehitamise eest vastutas, oli naine kelle hüüdnimi oli Paks Margareeta"}
+		},
+		"correct_answer": "1",
+		"latlng": [24.749284, 59.442435],
+		"img" : "data/pictures/17SuurRannavärav.png",
+		"category_loc":{"en" : "Gates", "et" : "Väravad"}
+	},
+	{
+		"name":{"en" : "Stolting Tower", "et" : "Stoltingi torn"},
+		"text":{"en" : "<p>Rein Zobel’s reconstruction (Zobel, R. 1980, pg. 113)</p><p>Stolting is not typical Tallinn tower. It is different from others because newer round shaped tower is built around older square shaped tower. Created 1410. It was the command tower of Tallinn port. Currently belongs to the publishing company Avita. </p>","et" : "<p>Rein Zobeli rekonstruktsioon (Zobel, R. 1980, lk 113)</p><p>Stoltingi torn ei ole tüüpiline Tallinna torn. See erineb teistest sellepoolest, et uuem ringi kujuline torn on ehitatud ümber vanada ruudukujuliste tornide. Ehitatud 1410. See oli Tallinna sadama käsktorn. Hetkel kuulub see torn ettevõttele nimega Avita.</p>"},
+		"question":{"en": "Why this tower is called Stolting?", "et": "Miks on selle torni nimi Stolting?"},
+		"answers":{
+			"answer_1":{"en":"Stolz means Small Proud – this was the nick name of the tower during the mediaeval times", "et":"Stolz tähendab väike uhke - see oli torni hüüdnimi keskajal"},
+			"answer_2":{"en":"For the honor of Claus Stoltink – outstanding Tallinn citizen", "et":"Claus Stoltniki auks - väljapaistev Tallinna kodanik"},
+			"answer_3":{"en":"Stol is chair in Norwegian - the chair of the port’s commander was located in the top of the tower", "et":"Stol tähendab tool Norra keeles - sadama ülema tool asus selle torni tipus"}
+		},
+		"correct_answer": "1",
+		"latlng": [24.749563, 59.442052],
+		"img" : "data/pictures/18Stolting.png",
+		"category_loc":{"en" : "North wall towers", "et" : "Põhja müüri tornid"}
+	},
+	{
+		"name":{"en" : "Tower behind Hattorpe", "et" : "Hattorpe-tagune torn"},
+		"text":{"en" : "<p>Drawing made by Tallinn Engineering Brigade in 1738 (Zobel, R. 1980, pg. 196)</p><p>Tower behind Hattorpe is a typical Tallinn defense tower with the horseshoe shaped floor plan. Created in the end of 14th century. Tower was strongly distorted when it was integrated with the neo gothic style house built in in 1738 on Pikk street 62. </p>","et" : "<p>Tallinna Inseneride Brigaadi joonis 1738 (Zobel, R. 1980, lk 196)</p><p>Hattorpe-tagune torn on tüüpiline Tallinna kaitsetorn hobuseraua kujulise põrandaplaaniga. Ehitatud 14. sajandi lõpus. 1738. aastal muundatis seda torni väga tugevalt, kui Pikk tn 62 aadressile ehitati neo-gooti stiilis maja.</p>"},
+		"question":{"en": "Why this tower is called behind Hattorpe?", "et": "Miks on selle torni nimi Hattorpe-tagune?"},
+		"answers":{
+			"answer_1":{"en":"The doorway in to the tower was so low that everybody had to drop the hat", "et":"torni ukseava oli nii väikene, et kõik pidid sealt läbi minnes oma mütsi peast võtma"},
+			"answer_2":{"en":"Tower was next to Hattorpes real estate", "et":"Torn asus Hattorpe kinnisvara kõrval"},
+			"answer_3":{"en":"Torpe means rough in Spanish - tower guards had to wear rough hats", "et":"Torpe tähendab ebamugav Hispaania keeles. Torni valvurid pidid peakatteid kandma"}
+		},
+		"correct_answer": "2",
+		"latlng": [24.749169, 59.441486],
+		"img" : "data/pictures/19Hattorpe.png",
+		"category_loc":{"en" : "East wall towers", "et" : "Ida müüri tornid"}
+	},
+	{
+		"name":{"en" : "Small Coastal Gate", "et" : "Väike Rannavärav"},
+		"text":{"en" : "<p>Painting from 10th century (UT repository)</p><p>Small Coastal Gate was smaller set of towers (one main gate and one pre gate without towers). Created 1360, demolished already 1779 – 1887 when bastions were built.</p>","et" : "<p>Pilt 10. sajadist (UT repositoorium)</p><p>Väike Rannavärav oli väiksem kogum torne (üks põhivärav ja üks eelvärav ilma tornideta). Ehitatud 1360, hävitatud 1779-1887 kui ehitati bastionid.</p>"},
+		"question":{"en": "This gate was AKA Sand gate, but why it was called Small Costal Gate?", "et": "See värav oli AKA Liivavärav, aga miks oli selle nimi Väike Rannavärav?"},
+		"answers":{
+			"answer_1":{"en":"It was smaller then Big Costal gate", "et":"See oli väiksem kui Suur Rannavärav"},
+			"answer_2":{"en":"It connected the city and the smaller harbor for boats and fishing ships", "et":"See ühendas linna ja väikse sadama paatide ja kalalaevade jaoks"},
+			"answer_3":{"en":"The first captain of the tower had a name Meer Klein (sea small in German)", "et":"Torni esimese kapteni nimi oli Meer Klein (meri väike saksa keeles)"}
+		},
+		"correct_answer": "2",
+		"latlng": [24.748747, 59.440186],
+		"img" : "data/pictures/21Väikerannav.png",
+		"category_loc":{"en" : "Gates", "et" : "Väravad"}
+	},
+	{
+		"name":{"en" : "Bremen Tower", "et" : "Bremeni torn"},
+		"text":{"en" : "<p>Drawing made by Tallinn Engineering Brigade in 1738 (Zobel, R. 1980, pg. 219)</p><p>Bremen Tower is a typical Tallinn defense tower with the horseshoe shaped floor plan. Created 1410, height: 21.6 m. Currently it is only tower in Tallinn with flat roof. In medieval times it was used as a prison.</p>","et" : "<p>Tallinna Inseneride Brigaadi joonis 1738 (Zobel, R. 1980, lk 219)</p><p>Bremeni torn on tüüpiline Tallinna kaitsetorn hobuseraua kujulise põrandaplaaniga. Ehitatud 1410, kõrgus 21,6m. Hetkel ainukene torn Tallinnas millel on lamekatus. Keskajal kasutati seda vanglana.</p>"},
+		"question":{"en": "There were not too many prisons in medieval times. What did they do with criminals?", "et": "Keskajal ei olnud väga palju vanglaid. Mida nad tegid kriminaalidega?"},
+		"answers":{
+			"answer_1":{"en":"They cut the finger, the hand or the head depending on the size of the crime", "et":"Nad lõikasid nende sõrme, käe või pea vastavalt kuritegevuse suurusest"},
+			"answer_2":{"en":"They send them out from the city to work in country farms", "et":"Nad saadeti linnast välja taludesse tööle"},
+			"answer_3":{"en":"They escaped from the city and become pirates of the Baltic sea", "et":"Nad põgenesid linnast ja neist said Läänemere piraadid"}
+		},
+		"correct_answer": "1",
+		"latlng": [24.748983, 59.439323],
+		"img" : "data/pictures/22Bremen.png",
+		"category_loc":{"en" : "East wall towers", "et" : "Ida müüri tornid"}
+	},
+	{
+		"name":{"en" : "Tower behind Monks", "et" : "Munkadetagune torn"},
+		"text":{"en" : "<p>Drawing made by Tallinn Engineering Brigade in 1738 (Zobel, R. 1980, pg. 200)</p><p>Tower behind Monks is a typical Tallinn defense tower with the horseshoe shaped floor plan. Created 1373 – 1414, height 21,7.</p>","et" : "<p>Tallinna Inseneride Brigaadi joonis 1738 (Zobel, R. 1980, lk 200)</p><p>Munkadetagune torn on tüüpiline Tallinna kaitsetorn hobuseraua kujulise põrandaplaaniga. Ehitatud 1373-1414, kõrgus 21,7m.</p>"},
+		"question":{"en": "Why it is called behind Monks?", "et": ""},
+		"answers":{
+			"answer_1":{"en":"It was built by monks but then left behind", "et":"See torn ehitati munkade poolt, kes selle peale valmimist maha jätsid"},
+			"answer_2":{"en":"It was part of Dominican monastery and used as monks’ living rooms", "et":"See oli osa dominikaani kloostrist ja seda kasutati munkade eluruumidena"},
+			"answer_3":{"en":"It was located next to the Dominican monastery of St. Catherine", "et":"See asus dominiiklaste Püha katariina kloostri kõrval."}
+		},
+		"correct_answer": "3",
+		"latlng": [24.749592, 59.438386],
+		"img" : "data/pictures/23Munk.png",
+		"category_loc":{"en" : "East wall towers", "et" : "Ida müüri tornid"}
+	},
+	{
+		"name":{"en" : "Helleman Tower", "et" : "Hellemani torn"},
+		"text":{"en" : "<p>Rein Zobel’s reconstruction (Zobel, R. 1980, pg. 122)</p><p>Helleman Tower is a typical Tallinn defense tower with the horseshoe shaped floor plan. Created  1410, height: NA. Currently this tower is an art gallery and meeting place </p>","et" : "<p>Rein Zobeli rekonstruktsioon (Zobel, R. 1980, lk 122)</p><p>Hellemani torn on tüüpiline Tallinna kaitsetorn hobuseraua kujulise põrandaplaaniga. Ehitatud 1410. Hetkel on torn kunstigalerii ja kohtumispaik.</p>"},
+		"question":{"en": "Why this tower is called Helleman?", "et": "Miks on selle torni nimi Helleman?"},
+		"answers":{
+			"answer_1":{"en":"The first captain of the tower was fearless as man from the hell", "et":"Torni esimene kapten oli kartmatu kui mees põrgust (hell inglise keeles)"},
+			"answer_2":{"en":"Helle’s man was the first construction manager of the tower", "et":"Helle oli torni esimene ehitusjuht"},
+			"answer_3":{"en":"Laurentius van der Helle who owned the land next to the tower", "et":"Laurentius Van Der Helle omas maad selle torni kõrval"}
+		},
+		"correct_answer": "3",
+		"latlng": [24.749751, 59.437473],
+		"img" : "data/pictures/24Helleman.png",
+		"category_loc":{"en" : "East wall towers", "et" : "Ida müüri tornid"}
+	},
+	{
+		"name":{"en" : "Viru Gate", "et" : "Viru värav"},
+		"text":{"en" : "<p>Model of Viru Gate (register.muinas.ee)</p><p>Viru gate was a bigger set of towers and walls: one main gate tower and 2 pre-gates with 4 defense towers. Created 1345 – 1370. Main gate was demolished 1843 in order to widen the street and ease the traffic. Pre-gate was partly demolished 1880 in order to build the tramway. Bigger tower next to twin pre-gate towers was built in 1898.</p>","et" : "<p>Viru värava mudel (register.muinas.ee)</p><p>Viru värav oli suurem müüride ja tornide kogum (Üks põhi väravatorn ja kaks eelväravat koos nelja kaitsetorniga). Ehitatud 1345-1370. Põhi värav hävitati 1843, et laiendada tänavat liikluse leevendamiseks. Eelvärav hävitati osaliselt 1880, et ehitada trammi tee. Suur torn käksik eelvärava torni kõrval ehitati 1898.</p>"},
+		"question":{"en": "The original name of the gate was Lehmporte – Clay Gate. Why?", "et": "Värava originaalne nimi oli Lehmporte - Savi Värav. Miks?"},
+		"answers":{
+			"answer_1":{"en":"Port was built from the clay", "et":"Sadam oli ehitatud savist"},
+			"answer_2":{"en":"Clay bounds located near to the gate", "et":"Värava lähedal asusid savipiirid"},
+			"answer_3":{"en":"Christian Lehmman was the first captain of the gate", "et":"Värava esimene kapten oli Christian Lehmman"}
+		},
+		"correct_answer": "2",
+		"latlng": [24.750166, 59.436594],
+		"img" : "data/pictures/25ViruVärav.png",
+		"category_loc":{"en" : "Gates", "et" : "Väravad"}
+	},
+	{
+		"name":{"en" : "Hinke Tower", "et" : "Hinke torn"},
+		"text":{"en" : "<p>Drawing made by Tallinn Engineering Brigade in 1738 (Zobel, R. 1980, pg. 224)</p><p>Hinke was a typical Tallinn defense tower with the horseshoe shaped floor plan. Created 1345 – 1355. Currently it is part of the building in Pärnu mnt 2 / Müürivahe 32.</p>","et" : "<p>Tallinna Inseneride Brigaadi joonis 1738 (Zobel, R. 1980, lk 224)</p><p>Hinke torn oli tüüpiline Tallinna kaitsetorn hobuseraua kujulise põrandaplaaniga. Ehitatud 1345-1355. Hetkel on Pärnu mnt 2/ Müürivahe 32 asuva hoone osa.</p>"},
+		"question":{"en": "Why so many towers are destroyed or integrated with newer buildings?", "et": "Mäks on nii paljud tornid hävitatud või integreeritud uute ehitistega?"},
+		"answers":{
+			"answer_1":{"en":"People of modern times did not see the value of mediaeval buildings", "et":"Tänapäeva inimesed ei näinud keskaegsete tornide väärtust"},
+			"answer_2":{"en":"Historical buildings were destroyed by radical Christians during the reformation", "et":"Ajaloolised ehitsed hävitati radikaalsete kristlaste poolt reformatsiooni ajal"},
+			"answer_3":{"en":"Gothic stile is very depressive and buildings destroyed themselves", "et":"Gooti stiil on väga masendav ja ehitised hävitasid ennast ise"}
+		},
+		"correct_answer": "1",
+		"latlng": [24.749346, 59.43602],
+		"img" : "data/pictures/26Hinke.png",
+		"category_loc":{"en" : "South wall towers", "et" : "Lõuna müüri tornid"}
+	},
+	{
+		"name":{"en" : "Devils Tower", "et" : "Kuradiema torn"},
+		"text":{"en" : "<p>Drawing made by Tallinn Engineering Brigade in 1728 (Zobel, R. 1980, pg. 139)</p><p>Devils Tower was a typical Tallinn defense tower with the horseshoe shaped floor plan. Created NA, height NA. Demolished 1882.</p>","et" : "<p>Tallinna Inseneride Brigaadi joonis 1728 (Zobel, R. 1980, lk 139)</p><p>Kuradiema torn on tüüpiline Tallinna kaitsetorn hobuseraua kujulise põrandaplaaniga. Pole teade millal ehitati, ega kõrgust. Hävitati 1882.</p>"},
+		"question":{"en": "Why this tower was called devils (or Mother of Devil)?", "et": "Miks on selle torni nimi kuradi (või kuradiema)?"},
+		"answers":{
+			"answer_1":{"en":"The first captain of the tower was evil as a devil (or devils mother)", "et":"Torni esimene kapten oli kuri nagu kurat (või kuradiema)"},
+			"answer_2":{"en":"Estonians worship pagan and the tower was named for Satan’s honor", "et":"Eestlased usuvad paganasse ja torn nimetati kuradi auks"},
+			"answer_3":{"en":"Even the devil doesn’t know", "et":"Isegi kurat ei tea"}
+		},
+		"correct_answer": "3",
+		"latlng": [24.748023, 59.435549],
+		"img" : "data/pictures/27Kuradi.png",
+		"category_loc":{"en" : "South wall towers", "et" : "Lõuna müüri tornid"}
+	},
+	{
+		"name":{"en" : "Lurenburg", "et" : "Lurenburgi suurtükitorn"},
+		"text":{"en" : "<p>Drawing made by Tallinn Engineering Brigade in 1728 (Zobel, R. 1980, pg. 256)</p><p>Lurenburg was a cannon tower similar to the Fat Margaret but smaller (height 18 m, diameter 20.4 m).  Created 1538–1554, demolished: 1767 during the expansion of the bastion system. Approximate location Pärnu mnt 7.</p>","et" : "<p>Tallinna Inseneride Brigaadi joonis 1728 (Zobel, R. 1980, lk 256)</p><p>Lurenburgi suurtükitorn on sarnane Paksule Margareetale aga väiksem (kõrgus: 18m, diameeter: 20,4m). Ehitatud 1538-1554, hävitatud 1767 bastione süsteemi laiendamisel. Umbkaudne asukoht oli Pärnu mnt 7.</p>"},
+		"question":{"en": "Why this tower was called Lurenburg?", "et": "Miks on selle torni nimi Lurenburg?"},
+		"answers":{
+			"answer_1":{"en":"Luren means spying and burg means castle - Tallinn was a city of spies", "et":"Luren tähendab spioon ja burg tähendab lossi. Tallinn oli spioonide linn"},
+			"answer_2":{"en":"Lure means temptation, burg means city - Tallinn was a city of temptations", "et":"Lure tähendab kiusatus ja burg tähendab linn. Tallinn oli kiusatuste linn"},
+			"answer_3":{"en":"Herman Luer owned a land nearby", "et":"Herman Lueril omas maad selle torni lähedal"}
+		},
+		"correct_answer": "3",
+		"latlng": [24.747836, 59.434611],
+		"img" : "data/pictures/28Lurenburg.png",
+		"category_loc":{"en" : "South wall towers", "et" : "Lõuna müüri tornid"}
+	},
+	{
+		"name":{"en" : "Cattle Gate", "et" : "Karjavärav"},
+		"text":{"en" : "<p>Drawing made by Tallinn Engineering Brigade in 1728 (Zobel, R. 1980, pg. 175)</p><p>Cattle Gate was a bigger set of towers and walls: one main gate tower and 1 pre-gate with 2 defense towers. Created 1456, demolished 1849 in order to widen the street.</p>","et" : "<p>Tallinna Inseneride Brigaadi joonis 1728 (Zobel, R. 1980, lk 175)</p><p>Karjavärav oli suurem kogum torne ja müüre (Üks põhivärav, üks eelvärav koos kahe kaitsetorniga). Ehitatud 1456, hävitatud 1849, et laiendada tänavat.</p>"},
+		"question":{"en": "Why this gate was called Cattle?", "et": "Miks on värava nimi karja?"},
+		"answers":{
+			"answer_1":{"en":"It was used to transport cattle between the city and pastures", "et":"Seda kasutati veiste transportimiseks linna ja karjamaa vahel"},
+			"answer_2":{"en":"This was the only gate through what the Estonians could enter. The merchants and nobleman who lived in the city treated Estonians like animals.", "et":"See oli ainukene värav läbi mille eestlased võisid siseneda. Kaupmehed ja aadlikud kes linnas elasid kohtlesid eestlasi nagu loomi."},
+			"answer_3":{"en":"Citizens of Tallinn suffered from claustrophobia and they run out of gates like animals", "et":"Tallinna elanikud kannatasid klaustrofoobia käes ja nad jooksid väravast välja nagu loomad"}
+		},
+		"correct_answer": "1",
+		"latlng": [24.746484, 59.435064],
+		"img" : "data/pictures/29Karja.png",
+		"category_loc":{"en" : "Gates", "et" : "Väravad"}
+	},
+	{
+		"name":{"en" : "Assauwe Tower", "et" : "Assauwe torn"},
+		"text":{"en" : "<p>Drawing made by Tallinn Engineering Brigade in 1728 (Zobel, R. 1980, pg. 159)</p><p>Assauwe is a typical Tallinn defense tower with the horseshoe shaped floor plan. Created 1370 – 1380, height NA. Currently home for Museum of Theatre and Music.</p>","et" : "<p>Tallinna Inseneride Brigaadi joonis (Zobel, R. 1980, lk 159)</p><p>Assauwe on tüüpiline Tallinna kaitsetorn hobuseraua kujulise põrandaplaaniga. Ehitatud 1370-1380, kõrgus teadmata. Hetkel asub seal teatri ja muusika muuseum.</p>"},
+		"question":{"en": "Why this tower is called Assauwe?", "et": "Miks on selle torni nimi Assauwer"},
+		"answers":{
+			"answer_1":{"en":"Shepherd Assauwe’s (or Asso) cattle yard was next to the tower", "et":"Karjane Assauwe (või Asso) veiste aedik oli torni kõrval"},
+			"answer_2":{"en":"The first captain of the tower was from Assuan (Egypt)", "et":"Torni esimene kapten oli pärist Assuanist (Egiptus)"},
+			"answer_3":{"en":"Alderman Asso Assauwe was the construction manager", "et":"Maavanem Asso Assauwe oli ehituse ülem"}
+		},
+		"correct_answer": "1",
+		"latlng": [24.745270, 59.434907],
+		"img" : "data/pictures/30Assauwe.png",
+		"category_loc":{"en" : "South wall towers", "et" : "Lõuna müüri tornid"}
+	},
+	{
+		"name":{"en" : "Harju Gate", "et" : "Harju värav"},
+		"text":{"en" : "<p>Rein Zobel’s reconstruction (Zobel, R. 1980, pg. 255)</p><p>Harju Gate was a bigger set of towers and walls: one main gate tower and 2 pre-gates with 4 defense towers. Main gate was created 1361 and demolished 1875 because gate was blocking the traffic on Harju street. Pre gate was created 1448–1453 and demolished in 1862. Originally the gate was called Smedeporte (Smiths gate), because Harju street was street of smiths. Gate towers and walls are marked on the pavement of Harju street. Basement of one of the pre gate towers can be seen through windows on the Vabaduse square. The cross on the pavement between the main and pre gate indicates the place where nobleman Johann von Üxküll was executed in 1535.</p>","et" : "<p>Rein Zobeli rekonstruktsioon (Zobel, R. 1980, lk 255)</p><p>Harju värav oli suurem kogus torne ja müüre (üks põhivärav ja kaks eelväravat koos nelja kaitsetorniga). Põhivärav ehitati 1361 ja hävitati 1875, sest see blokeeris Harju tänava liiklust. Eelärav ehitati 1448-1453 ja hävitati 1862. Esialgu oli värava nimi Smedeporte (Sepavärav), sest Harju tänav oli seppade tänav. värava torn ja müürid on merkeeritud Harju tänava kõnniteele. Vabaduse väljakult võib läbi akna nähe ühe eelvärava torni keldrit. Kõnniteel olev rist põhi- ja eel värava vahel näitab kohta kus aadlik Johann von Üxküll hukati 1535. aastal.</p>"},
+		"question":{"en": "Why Üxküll was executed?", "et": "Miks hukati Üxküll?"},
+		"answers":{
+			"answer_1":{"en":"For kidnapped and killing one of the Tallinn citizens (his ex peasant)", "et":"Tallinna elaniku röövimise ja tapmise pärast (tema endine talupoeg)"},
+			"answer_2":{"en":"For stealing the pretzels from the bakeries", "et":"Pagariärist pretzelite varastamise pärast"},
+			"answer_3":{"en":"For spreading the syphilis among the courtesans", "et":"Süüfilise levatimise pärast kurtisaanide seas"}
+		},
+		"correct_answer": "1",
+		"latlng": [24.743659, 59.434705],
+		"img" : "data/pictures/31Harju.png",
+		"category_loc":{"en" : "Gates", "et" : "Väravad"}
+	},
+	{
+		"name":{"en" : "Goat Tower", "et" : "Kitsetorn"},
+		"text":{"en" : "<p>Rein Zobel’s reconstruction (Zobel, R. 1980, pg. 225)</p><p>Goat Tower was a console tower. Created 1350, demolished 1577 during the Livonian war. Located in the corner of Rüütli street.</p>","et" : "<p>Rein Zobeli rekonstruktsioon (Zobel, R. lk 225)</p><p>Kitsetorn oli juhttorn. Ehitatud 1350, hävitatud 1577 Liivisõja ajal. Asub Rüütli tänava nurgas.</p>"},
+		"question":{"en": "Why the tower was called Goat tower (Zeghen thorn)?", "et": "Miks oli torni nimi Kitsetorn (Zeghen thorn)?"},
+		"answers":{
+			"answer_1":{"en":"The goat barn was nearby", "et":"Kitsede laut oli seal lähedal"},
+			"answer_2":{"en":"Solders had goatees", "et":"Sõduritel olid kitsehabemed"},
+			"answer_3":{"en":"The first captain of the tower laughed like a goat", "et":"Torni esimene kapten naeris nagu kits"}
+		},
+		"correct_answer": "1",
+		"latlng": [24.742300, 59.434615],
+		"img" : "data/pictures/32Kitse.png",
+		"category_loc":{"en" : "South wall towers", "et" : "Lõuna müüri tornid"}
+	},
+	{
+		"name":{"en" : "Kiek in de Kök", "et" : "Kiek in de Kök"},
+		"text":{"en" : "<p>Drawing made by Tallinn Engineering Brigade in 1738 (Zobel, R. 1980, pg. 273)</p><p>Kiek in de Kök is one of the biggest and powerful cannon towers in Tallinn. Created 1475 – 1483, height 38 m, diameter: 17.3 – 18.5 m. Currently location of History Museum </p>","et" : "<p>Tallinna Inseneride Brigaadi joonis 1738 (Zobel, R. 1980, lk 273)</p><p>Kiek in de Kök on üks suurim ja võimsaim suurtükitorn Tallinnas. Ehitatud 1475-1483, kõrgus 38m, diameeter 17,3-18,5m. Hetkel asub seal ajaloo muuseum.</p>"},
+		"question":{"en": "What does Kiek in de kök means?", "et": "Mida tähendab Kiek in de Kök?"},
+		"answers":{
+			"answer_1":{"en":"Rooster on the roof", "et":"Kukk katusel"},
+			"answer_2":{"en":"Kick in the (enemy’s) cock", "et":"Jalahoop (vastase) riista"},
+			"answer_3":{"en":"Look in to the kitchen", "et":"Vaata kööki"}
+		},
+		"correct_answer": "3",
+		"latlng": [24.741312, 59.434772],
+		"img" : "data/pictures/33Kiek.png",
+		"category_loc":{"en" : "South wall towers", "et" : "Lõuna müüri tornid"}
+	},
+	{
+		"name":{"en" : "Maiden's Tower", "et" : "Neitsitorn"},
+		"text":{"en" : "<p>Drawing made by Tallinn Engineering Brigade in 1728 (Zobel, R. 2011)</p><p>Maiden's Tower is not typical Tallinn defense tower. It is the only rectangular tower (if not taking into account console and gate towers. The construction was inspired by towers of city of Visby. Created 1373. Currently it is a museum-cafeteria </p>","et" : "<p>Tallinna Inseneride Brigaadi joonis 1728 (Zobel, R. 2011)</p><p>Neitsitorn ei ole tüüpiline Tallinna kaitsetorn. See on ainukene ristkülikukujuline torn (Kui ei arvesta juht- ega värava torni). Ehitust inspireerisid Visby linna tornid. Ehitatud 1373. Hetkel asub seal muuseumi kohvik.</p>"},
+		"question":{"en": "Why this tower is called Maiden’s?", "et": "Miks on selle torni nimi Neitsi?"},
+		"answers":{
+			"answer_1":{"en":"One maiden was sacrificed and wall was built around her in order to guarantee the good omen of war", "et":"Üks neitsi overdati ja tema ümber ehitati müür, et garanteerida hea õnn sõjas"},
+			"answer_2":{"en":"It was used as a prison for prostitutes and maiden’s was a sarcastic nickname maid by cruel citizens", "et":"Seda kasutati prostituutide vanglana ja õelad kodanikud kutsusid seda sarkastiliselt neitsiks"},
+			"answer_3":{"en":"The captain of the tower was called Hinse Meghe", "et":"Torni kapten oli Hinse Meghe"}
+		},
+		"correct_answer": "3",
+		"latlng": [24.740863, 59.435221],
+		"img" : "data/pictures/34Neitsi.png",
+		"category_loc":{"en" : "South wall towers", "et" : "Lõuna müüri tornid"}
+	},
+	{
+		"name":{"en" : "Stable Tower", "et" : "Tallitorn"},
+		"text":{"en" : "<p>Stable Tower is a console tower. Created 14th century. Currently cafeteria. Entrance to the wall gallery </p>","et" : "<p>Tallitorn on juhttorn. Ehitatud 14. sajandil. Hetkel kohvik. Sissekäik müüri muuseumi.</p>"},
+		"question":{"en": "Why is it called Stable Tower?", "et": "Miks on selle nimi Tallitorn?"},
+		"answers":{
+			"answer_1":{"en":"The city work yard was next to the tower", "et":"Linna töökoda asus torni kõrval"},
+			"answer_2":{"en":"This tower was used as a stable", "et":"Torni kasutati tallina"},
+			"answer_3":{"en":"Soldiers drink and laugh like horses", "et":"Sõdurid jõid ja naersid jagu hobused"}
+		},
+		"correct_answer": "1",
+		"latlng": [24.740743, 59.435645],
+		"img" : "",
+		"category_loc":{"en" : "West wall towers", "et" : "Lääne müüri tornid"}
+	},
+	{
+		"name":{"en" : "Short Leg Gate Tower", "et" : "Lühikese jala väravatorn"},
+		"text":{"en" : "<p>Drawing made by Tallinn Engineering Brigade in 1738 (Zobel, R. 1980, pg. 180)</p><p>Short Leg Gate is one of two gates between up down and downtown. Created 1454–1456. Currently Hortus Musicus concert hall. Tower is Haunted by monk Justinus who was an ex-criminal and hangman.</p>","et" : "<p>Tallinna Inseneride Brigaadi joonis 1738 (Zobel, R. 1980, lk 180)</p><p>Lühikese jala värav on üks kahest väravast ülem- ja alamlinna vahel. Ehitatud 1454-1456. Hetkel asub seal Hortus Musicuse kontsertsaal. Torni kummitab munk Justinus, kes oli endine kriminaal ja timukas.</p>"},
+		"question":{"en": "Who is the musician who performs concerts in this tower nowadays?", "et": "Kes on see muusik, kes esineb seal tornis tänapäeval?"},
+		"answers":{
+			"answer_1":{"en":"Andres Mustonen", "et":"Andres Mustonen"},
+			"answer_2":{"en":"Neeme Järvi", "et":"Neeme Järvi"},
+			"answer_3":{"en":"Arvo Pärt", "et":"Arvo Pärt"}
+		},
+		"correct_answer": "1",
+		"latlng": [24.741089, 59.436033],
+		"img" : "data/pictures/36ShortLeg.png",
+		"category_loc":{"en" : "West wall towers", "et" : "Lääne müüri tornid"}
+	},
+	{
+		"name":{"en" : "Stür den Kerl", "et" : "Stür den Kerl"},
+		"text":{"en" : "<p>Drawing made by Tallinn Engineering Brigade in 1728 (Zobel, R. 2011)</p><p>Stür den Kerl was southeast corner tower of Toompea (small) castle. Created in the beginning of 14 century, height ~ 25 m, demolished 1767.</p>","et" : "<p>Tallinna Inseneride Brigaadi joonis 1728 (Zobel, R. 2011)</p><p>Stür den Kerl oli Toompea (väikse) lossi kagu nurgas asuv torn. Ehitatud 25. sajandi alguses, kõrgus ~25m, hävitatud 1767.</p>"},
+		"question":{"en": "What does Stür den Kerl means?", "et": "Mida tähendab Stür den Kerl?"},
+		"answers":{
+			"answer_1":{"en":"Fend the enemy ", "et":"Võitle vaenlasega"},
+			"answer_2":{"en":"Stubborn chap", "et":"Kangekaelne vend"},
+			"answer_3":{"en":"Hard core", "et":"Kõva tuum"}
+		},
+		"correct_answer": "1",
+		"latlng": [24.738173, 59.435268],
+		"img" : "data/pictures/38Styr.png",
+		"category_loc":{"en" : "South wall towers", "et" : "Lõuna müüri tornid"}
+	},
+	{
+		"name":{"en" : "Tall Hermann", "et" : "Pikk Hermann"},
+		"text":{"en" : "<p>Tall Hermann is the tallest tower of Toompea (small) castle. Created in 14 – 16 century, height 45.6 m. Name means Tall warrior or big boss.</p>","et" : "<p>Pikk Hermann on Toompea (väikse) lossi kõrgeim torn. Ehitatud 14-15 sajand, kõrgus 45,6m. Nimi tähenda pikk sodalane või suur boss.</p>"},
+		"question":{"en": "According to the city legends Tall Herman had a lover among Tallinn towers. What was the name of his lover?", "et": "Linnalegendi kohaselt oli pikal Hermanil Tallinna tornide seas armukene. Mis oli tema armukese nimi?"},
+		"answers":{
+			"answer_1":{"en":"Fat Margaret", "et":"Paks Margareeta"},
+			"answer_2":{"en":"Helleman", "et":"Helleman"},
+			"answer_3":{"en":"Goat", "et":"Kits"}
+		},
+		"correct_answer": "1",
+		"latlng": [24.736964, 59.435123],
+		"img" : "",
+		"category_loc":{"en" : "West wall towers", "et" : "Lääne müüri tornid"}
+	},
+	{
+		"name":{"en" : "Pilsticker tower", "et" : "Pilstickeri torn"},
+		"text":{"en" : "<p>Pilsticker is the northwest corner tower of the Toompea (small) castle. Created 14-15 century, height 32 m.</p>","et" : "<p>Pilsticker asub Toompea (väikese) lossi loode nurgas. Ehitatud 14-15 sajand, kõrgus 32m.</p>"},
+		"question":{"en": "What does the Pilsticker means?", "et": "Mida tähendab Pilsticker"},
+		"answers":{
+			"answer_1":{"en":"Throat cutter", "et":"Kõrilõikaja"},
+			"answer_2":{"en":"Arrow sharpener ", "et":"Noole teritaja"},
+			"answer_3":{"en":"Skull crusher ", "et":"Koljude purustaja"}
+		},
+		"correct_answer": "2",
+		"latlng": [24.736996, 59.436366],
+		"img" : "",
+		"category_loc":{"en" : "West wall towers", "et" : "Lääne müüri tornid"}
+	},
+	{
+		"name":{"en" : "Landskrone tower", "et" : "Landskrone torn"},
+		"text":{"en" : "<p>Landskrone is the northeast corner of the Toompea (small) castle. Created in 14 – 15 century, height 28 m.</p>","et" : "<p>Landskrone torn asub Toompea (väikese) lossi kirde nurgas. Ehitatud 14-15 sajand, kõrgus 28m.</p>"},
+		"question":{"en": "What does Landskrone means?", "et": "Mida tähendab Landskrone?"},
+		"answers":{
+			"answer_1":{"en":"Landlords money", "et":"Üürileandja raha"},
+			"answer_2":{"en":"Game of Thrones", "et":"Troonide mäng"},
+			"answer_3":{"en":"Land’s crown", "et":"kroonide maa"}
+		},
+		"correct_answer": "3",
+		"latlng": [24.737887, 59.436384],
+		"img" : "",
+		"category_loc":{"en" : "West wall towers", "et" : "Lääne müüri tornid"}
+	},
+	{
+		"name":{"en" : "Tower near the former Russian church", "et" : "Torn Vana vene kiriku juures"},
+		"text":{"en" : "<p>Drawing made by Tallinn Engineering Brigade in 1738 (Zobel, R. 1980, pg. 219)</p><p>Tower near the former Russian church was not typical tower with the half circle floor plan. It is not much known about this tower. Even the location is not 100% clear. It is known that it was located next to the former Russian church.</p>","et" : "<p>Tallinna Inseneride Brigaadi joonis 1738 (Zobel, R. 1980, lk 219)</p><p>Torn Vana vene kiriku juures ei ole tüüpiline torn poolringi kujulise põrandaplaaniga. Selle torni kohta ei teata palju. Isegi selle asukoht pole 100% kindel. Teatakse, et see asus Vana vene kiriku juures.</p>"},
+		"question":{"en": "Has the tower near the former Russian church been preserved?", "et": "Kas torn Vana vene kiriku juures on praeguseks säilinud?"},
+		"answers":{
+			"answer_1":{"en":"fully remained", "et":"täielikult säilinud"},
+			"answer_2":{"en":"partially remained near the former Russian church", "et":"osaliselt säilinud Vana vene kiriku juures"},
+			"answer_3":{"en":"nothin left", "et":"pole midagi alles"}
+		},
+		"correct_answer": "3",
+		"latlng": [24.748691, 59.440630],
+		"img" : "data/pictures/20Russian.png",
+		"category_loc":{"en" : "East wall towers", "et" : "Ida müüri tornid"}
+	},
+	{
+		"name":{"en" : "Clock Tower", "et" : "Kellatorn (Toomvärav)"},
+		"text":{"en" : "<p>Clock Tower 1830-1840 drawing by Carl Friedrich Christian Buddeus (1775–1864)</p><p>Clock Tower (Klocktorne) was a gate to the castum magnus (big fortress) that had 13 wall towers. It was located at Piiskopi street, Lossiplats 6. Created 1227-1229, demolished 1860.</p>","et" : "<p>Carl Friedrich Christian Buddeus joonis kellatornist 1830-1840 (1775-1864)</p><p>Kellatorn oli värav castum magnusesse (suurde kindlusesse) ja sellel oli 13 torni. See asus Piiskopi tänaval, Lossiplats 6. Ehitatud 1227-1229, hävitatud 1860.</p>"},
+		"question":{"en": "Has the Clock Tower been preserved?", "et": "Kas Kellatorn(Toomvärav) on praeguseks säilinud?"},
+		"answers":{
+			"answer_1":{"en":"fully remained", "et":"täielikult säilinud"},
+			"answer_2":{"en":"partially remained on the outer wall of Piiskopi street", "et":"osaliselt Piiskopi tänava poolses välisseinas"},
+			"answer_3":{"en":"nothing left", "et":"pole midagi alles"}
+		},
+		"correct_answer": "2",
+		"latlng": [24.739669, 59.436038],
+		"img" : "data/pictures/37Toomvärav.png",
+		"category_loc":{"en" : "Gates", "et" : "Väravad"}
+	}
+]
