@@ -13,7 +13,7 @@ Xcode https://itunes.apple.com/us/app/xcode/id497799835?mt=12
 
 ## Install cordova and add iOS platform
 ```
-open terminal in tallin towers game folder
+open terminal in tallin towers game folder (might have to add sudo prefix to commands)
 run in terminal: npm install -g cordova
 run in terminal: cordova platform add iOS
 run in terminal: cordova build ios
