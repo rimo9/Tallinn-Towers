@@ -76,7 +76,7 @@ function createPopUp(event){
 	//get markers coords and users coords and calculate distance between them and if it more than 20m, notify player to get closer, else it shows picture, info, question and answers about that location
 	latlng = [geolocate._lastKnownPosition.coords.longitude, geolocate._lastKnownPosition.coords.latitude]
 	var distance = calculateDistance(latlng, route[event.target.id.substring(8)].latlng).toFixed(2)*1000;
-	if(distance > 20000){
+	if(distance > 20){
 		if(app_language=='et'){
 			document.getElementsByClassName('title_div')[0].innerHTML = "<p>Oled punktist liiga kaugel. Oled punktist "+distance+"m kaugusel.</p>"
 		} else {
