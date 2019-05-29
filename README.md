@@ -2,7 +2,7 @@
 ```
 Move apk file from "game_android" folder top android device
 If on Android Nougat version or lower, enable 'Unknown Sources' from settings->security/Lock screen and security->Unknown sources
-If on Android Oreo or higher allow installin unknown apps while trying to open apk on android
+If on Android Oreo or higher allow installing unknown apps while trying to open apk on android
 After successfully installing the app you can open it and start playing
 ```
 # Running application on iOS

@@ -76,7 +76,11 @@ function createPopUp(event){
 	//get markers coords and users coords and calculate distance between them and if it more than 20m, notify player to get closer, else it shows picture, info, question and answers about that location
 	latlng = [geolocate._lastKnownPosition.coords.longitude, geolocate._lastKnownPosition.coords.latitude]
 	var distance = calculateDistance(latlng, route[event.target.id.substring(8)].latlng).toFixed(2)*1000;
-	if(distance > 20){
+	if(distance > 100){
+		document.getElementsByClassName('question_img')[0].src = "";
+		document.getElementsByClassName('text_div')[0].innerHTML = "";
+		document.getElementsByClassName('text_div')[0].innerHTML = "";
+		document.getElementsByClassName('question_div')[0].innerHTML = "";
 		if(app_language=='et'){
 			document.getElementsByClassName('title_div')[0].innerHTML = "<p>Oled punktist liiga kaugel. Oled punktist "+distance+"m kaugusel.</p>"
 		} else {
@@ -529,7 +533,7 @@ function endPopUp(event){
 function update(){
 	if(localStorage.getItem("correctAnswers")){correctAnswers = parseInt(localStorage.getItem("correctAnswers"));}
 	if(localStorage.getItem("incorrectAnswers")){incorrectAnswers = parseInt(localStorage.getItem("incorrectAnswers"));}
-	document.getElementById('custom-control').innerHTML ='<p style="text-align:center;margin:0px;">&nbsp;'+(correctAnswers+incorrectAnswers)+'/'+nrOfQuestions+'&nbsp;</p>&nbsp;<div class="custom-control-correct"></div><div class="custom-control-text">&nbsp;'+correctAnswers+'&nbsp;</div><br>&nbsp;<div class="custom-control-incorrect"></div><div class="custom-control-text">&nbsp;'+incorrectAnswers+'&nbsp;</div>';
+	document.getElementById('custom-control-info').innerHTML ='<p style="text-align:center;margin:0px;padding-top:5px;">&nbsp;'+(correctAnswers+incorrectAnswers)+'/'+nrOfQuestions+'&nbsp;</p>&nbsp;<div class="custom-control-correct"></div><div class="custom-control-text">&nbsp;'+correctAnswers+'&nbsp;</div><br>&nbsp;<div class="custom-control-incorrect"></div><div class="custom-control-text">&nbsp;'+incorrectAnswers+'&nbsp;</div>';
 }
 
 //change their name depending on the users answer to the questions given to him and if they're correct or not 
@@ -577,10 +581,14 @@ class MyCustomControlInfo {
 	//creating custom controller
 	onAdd(map){
 		this.map = map;
+		this.div = document.createElement('div');
+		this.div.className = "mapboxgl-ctrl";
+		
 		this.container = document.createElement('div');
-		this.container.id = "custom-control";
-		this.container.className = "mapboxgl-ctrl mapboxgl-ctrl-group";
-		return this.container;
+		this.container.id = "custom-control-info";
+		this.container.className = "mapboxgl-ctrl-group";
+		this.div.appendChild(this.container);
+		return this.div;
 	}
 	onRemove(){
 		this.container.parentNode.removeChild(this.container);
@@ -621,10 +629,14 @@ class MyCustomControlTime {
 	//creating custom controller
 	onAdd(map){
 		this.map = map;
+		this.div = document.createElement('div');
+		this.div.className = "mapboxgl-ctrl";
+		
 		this.container = document.createElement('div');
 		this.container.id = "custom-control-time";
-		this.container.className = "mapboxgl-ctrl mapboxgl-ctrl-group";
-		return this.container;
+		this.container.className = "mapboxgl-ctrl-group";
+		this.div.appendChild(this.container);
+		return this.div;
 	}
 	onRemove(){
 		this.container.parentNode.removeChild(this.container);

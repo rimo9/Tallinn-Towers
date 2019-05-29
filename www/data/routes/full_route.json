@@ -191,9 +191,9 @@ full_route = [
 			"answer_3":{"en":"Tower was behind the goose pond", "et":"Torn oli hane tiigi taga"}
 		},
 		"correct_answer": "2",
-		"latlng": [24.748206, 59.442250],
+		"latlng": [24.746709, 59.441913],
 		"img" : "data/pictures/14Grusbeke.png",
-		"category_loc":{"en" : "North wall towers", "et" : "Põhja müüri tornid"}
+		"category_loc":{"en" : "West wall towers", "et" : "Lääne müüri tornid"}
 	},
 	{
 		"name":{"en" : "Renten Tower", "et" : "Renteni torn"},
@@ -219,7 +219,7 @@ full_route = [
 			"answer_3":{"en":"Tower guards used to play wolf augmented reality defense (ARD) games on their spare time ", "et":"Torni valvurid mängisid vabal ajal Hundi liitreaalseid kaitsemänge"}
 		},
 		"correct_answer": "1",
-		"latlng": [24.748224, 59.441934],
+		"latlng": [24.748206, 59.442259],
 		"img" : "data/pictures/16Wulfard.png",
 		"category_loc":{"en" : "North wall towers", "et" : "Põhja müüri tornid"}
 	},

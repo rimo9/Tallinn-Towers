@@ -47,10 +47,10 @@
 .mapboxgl-ctrl-bottom-right  { right:0; bottom:0; }
 
 .mapboxgl-ctrl { clear:both; pointer-events:auto }
-.mapboxgl-ctrl-top-left .mapboxgl-ctrl { margin:10px 0 0 10px; float:left; margin-top:max(10px, env(safe-area-inset-top));}
-.mapboxgl-ctrl-top-right .mapboxgl-ctrl{ margin:10px 10px 0 0; float:right; margin-top:max(10px, env(safe-area-inset-top));}
-.mapboxgl-ctrl-bottom-left .mapboxgl-ctrl { margin:0 0 10px 10px; float:left; margin-bottom:max(10px, env(safe-area-inset-bottom));}
-.mapboxgl-ctrl-bottom-right .mapboxgl-ctrl { margin:0 10px 10px 0; float:right; margin-bottom:max(10px, env(safe-area-inset-bottom));}
+.mapboxgl-ctrl-top-left .mapboxgl-ctrl { margin:10px 0 0 10px; float:left;}
+.mapboxgl-ctrl-top-right .mapboxgl-ctrl{ margin:10px 10px 0 0; float:right;}
+.mapboxgl-ctrl-bottom-left .mapboxgl-ctrl { margin:0 0 10px 10px; float:left;}
+.mapboxgl-ctrl-bottom-right .mapboxgl-ctrl { margin:0 20px 30px 0; float:right;}
 
 .mapboxgl-ctrl-group {
     border-radius: 4px;
@@ -61,8 +61,8 @@
     background: #fff;
 }
 .mapboxgl-ctrl-group > button {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     display: block;
     padding: 0;
     outline: none;

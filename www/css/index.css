@@ -18,14 +18,22 @@ select::-ms-expand { /* for IE 11 */
 	bottom: 0;
 	width: 100%;
 }
+.mapboxgl-control-container {
+	font-size: 21px;
+}
 #custom-control-end-button{
 	background-color: #ffffff; /* White */
 	padding: 3px 10px;
-	font-size: 14px;
 	border-radius: 4px;
+	font-size: 21px;
+	margin-top: env(safe-area-inset-top);
 }
 #custom-control-time{
 	padding: 3px;
+	margin-top: env(safe-area-inset-top);
+}
+#custom-control-info{
+	margin-bottom: env(safe-area-inset-bottom);
 }
 .custom-control-correct{
 	background-image: url('correct_icon.png');
