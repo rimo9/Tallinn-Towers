@@ -1,41 +1,45 @@
-name: Add Pull Request Link to Jira Issue
+name: Add Web Link to Jira Issue
 
 on:
   pull_request:
     types:
-      - opened
+      - opened  # Trigger when a pull request is opened
 
 jobs:
-  jira_comment:
+  add-web-link:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Check out the code
-        uses: actions/checkout@v2
+    - name: Checkout code
+      uses: actions/checkout@v2
 
-      - name: Extract Issue Key from Pull Request Title
-        id: extract_issue_key
-        run: echo "::set-output name=issue_key::$(echo ${GITHUB_HEAD_REF} | cut -d '-' -f 1)"
-      
-      - name: Add Web Link to Jira Issue
-        env:
-          JIRA_API_TOKEN: ${{ secrets.JIRA_API_TOKEN }}
-          JIRA_API_URL: ${{ secrets.JIRA_API_URL }}
-          REPO_NAME: ${{ github.repository }}
-          PULL_REQUEST_NUMBER: ${{ github.event.pull_request.number }}
-        run: |
-          issue_key="${{ steps.extract_issue_key.outputs.issue_key }}"
-          jira_url="${JIRA_API_URL}/rest/api/2/issue/${issue_key}/remotelink"
-          github_url="https://github.com/${REPO_NAME}/pull/${PULL_REQUEST_NUMBER}"
-          web_link_title="${REPO_NAME} - Pull Request ${PULL_REQUEST_NUMBER}"
-  
-          curl -X POST \
-            -H "Authorization: Bearer ${JIRA_ACCESS_TOKEN}" \
-            -H "Content-Type: application/json" \
-            -d '{
-              "object": {
-                  "url": "'${github_url}'",
-                  "title": "'${web_link_title}'"
-              }
-            }' \
-            "${jira_url}"
+    - name: Extract Issue Key from Pull Request Title
+      id: extract_issue_key
+      run: |
+        issue_key=$(echo "${{ github.event.pull_request.title }}" | grep -oE '[A-Z]+-[0-9]+')
+        echo "::set-output name=issue_key::${issue_key}"
+
+
+    - name: Create Jira Web Link
+      env:
+        JIRA_API_TOKEN: ${{ secrets.JIRA_API_TOKEN }}
+        JIRA_API_URL: ${{ secrets.JIRA_API_URL }}
+        REPO_NAME: ${{ github.repository }}
+        PULL_REQUEST_NUMBER: ${{ github.event.pull_request.number }}
+      run: |
+        issue_key="${{ steps.extract_issue_key.outputs.issue_key }}"
+        jira_api_url="${JIRA_API_URL}/issue/${issue_key}/remotelink"
+
+        github_url="https://github.com/${REPO_NAME}/pull/${PULL_REQUEST_NUMBER}"
+        web_link_title="${REPO_NAME} - Pull Request ${PULL_REQUEST_NUMBER}"
+
+        curl -X POST \
+          -H "Authorization: Bearer ${JIRA_API_TOKEN}" \
+          -H "Content-Type: application/json" \
+          -d '{
+            "object": {
+                "url": "'${github_url}'",
+                "title": "'${web_link_title}'"
+            }
+          }' \
+          "${jira_api_url}"
