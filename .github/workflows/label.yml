@@ -28,7 +28,7 @@ jobs:
         PULL_REQUEST_NUMBER: ${{ github.event.pull_request.number }}
       run: |
         issue_key="${{ steps.extract_issue_key.outputs.issue_key }}"
-        jira_api_url="${JIRA_API_URL}/rest/api/2/issue/${issue_key}/remotelink"
+        jira_api_url="https://extranet.nixor.ee/jira/rest/api/2/issue/${issue_key}/remotelink"
     
         github_url="https://github.com/${REPO_NAME}/pull/${PULL_REQUEST_NUMBER}"
         web_link_title="${REPO_NAME} - Pull Request ${PULL_REQUEST_NUMBER}"
