@@ -19,12 +19,12 @@ jobs:
       
       - name: Add Web Link to Jira Issue
         env:
-          JIRA_ACCESS_TOKEN: ${{ secrets.JIRA_ACCESS_TOKEN }}
+          JIRA_API_TOKEN: ${{ secrets.JIRA_API_TOKEN }}
           JIRA_API_URL: ${{ secrets.JIRA_API_URL }}
           REPO_NAME: ${{ github.repository }}
           PULL_REQUEST_NUMBER: ${{ github.event.pull_request.number }}
         run: |
-          issue_key="JIRA_ISSUE_ID_OR_KEY"
+          issue_key="${{ steps.extract_issue_key.outputs.issue_key }}"
           jira_url="${JIRA_API_URL}/rest/api/2/issue/${issue_key}/remotelink"
           github_url="https://github.com/${REPO_NAME}/pull/${PULL_REQUEST_NUMBER}"
           web_link_title="${REPO_NAME} - Pull Request ${PULL_REQUEST_NUMBER}"
