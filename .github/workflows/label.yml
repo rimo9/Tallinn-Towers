@@ -1,0 +1,30 @@
+name: Add Jira Comment on New Pull Request
+
+on:
+  pull_request:
+    types:
+      - opened
+
+jobs:
+  jira_comment:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out the code
+        uses: actions/checkout@v2
+
+      - name: Extract first word from pull request title
+        id: extract_issue_name
+        run: |
+          pr_title="${{ github.event.pull_request.title }}"
+          issue_name=$(echo "$pr_title" | cut -d ' ' -f 1)
+          echo "::set-output name=issue_name::$issue_name"
+          
+      - name: Make POST request to Jira API
+        env:
+          JIRA_API_URL: ${{ secrets.JIRA_API_URL }}  # Store your Jira API URL in GitHub Secrets
+          JIRA_API_TOKEN: ${{ secrets.JIRA_API_TOKEN }}  # Store your Jira API token in GitHub Secrets
+        run: |
+          issue_name="${{ steps.extract_issue_name.outputs.issue_name }}"
+          comment_text="A new pull request with issue name '$issue_name' has been created."
+          curl -X POST -H "Content-Type: application/json" -H "Authorization: Basic $JIRA_API_TOKEN" -d "{\"body\":\"$comment_text\"}" "$JIRA_API_URL/rest/api/2/issue/$issue_name/comment"
