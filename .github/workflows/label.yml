@@ -27,4 +27,4 @@ jobs:
         run: |
           issue_name="${{ steps.extract_issue_name.outputs.issue_name }}"
           comment_text="A new pull request with issue name '$issue_name' has been created."
-          curl -X POST -H "Content-Type: application/json" -H "Authorization: Basic $JIRA_API_TOKEN" -d "{\"body\":\"$comment_text\"}" "$JIRA_API_URL/rest/api/2/issue/$issue_name/comment"
+          curl -X POST -H "Content-Type: application/json" -H "Authorization: Bearer $JIRA_API_TOKEN" -d "{\"body\":\"$comment_text\"}" "$JIRA_API_URL/rest/api/2/issue/$issue_name/comment"
