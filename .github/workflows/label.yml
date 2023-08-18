@@ -34,7 +34,7 @@ jobs:
         web_link_title="${REPO_NAME} - Pull Request ${PULL_REQUEST_NUMBER}"
     
         curl -X POST \
-          -H "Authorization: Bearer ${JIRA_ACCESS_TOKEN}" \
+          -H "Authorization: Bearer ${JIRA_API_TOKEN}" \
           -H "Content-Type: application/json" \
           -d "{
             \"object\": {
