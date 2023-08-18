@@ -3,7 +3,7 @@ name: Add Web Link to Jira Issue
 on:
   pull_request:
     types:
-      - opened  # Trigger when a pull request is opened
+      - opened
 
 jobs:
   add-web-link:
@@ -16,10 +16,17 @@ jobs:
     - name: Extract Issue Key from Pull Request Title
       id: extract_issue_key
       run: |
-        issue_key=$(echo "${{ github.event.pull_request.title }}" | grep -oE '[A-Z]+-[0-9]+')
+        issue_key=$(echo "${{ github.event.pull_request.title }}" | grep -oE '(feature|bug)/([A-Za-z]+-[0-9]+)')
+        issue_key=${issue_key#*/}
         echo "::set-output name=issue_key::${issue_key}"
 
-
+    - name: Check if Issue Key is Empty
+      run: |
+        if [ -z "${{ steps.extract_issue_key.outputs.issue_key }}" ]; then
+          echo "Proper issue key not found."
+          exit 1
+        fi
+      
     - name: Create Jira Web Link
       env:
         JIRA_API_TOKEN: ${{ secrets.JIRA_API_TOKEN }}
