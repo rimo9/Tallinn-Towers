@@ -35,5 +35,5 @@ xcode -> preferences -> accounts -> add apple account if you haven't
 sign project https://help.apple.com/xcode/mac/current/#/dev23aab79b4
 Run the game on a device
 You need to trust an unrealeased iOS App: Settings -> General -> Profiles -> Tallinn Towers -> Trust "Tallinn Towers"
-Play the game.
+Play the game..
 ```
