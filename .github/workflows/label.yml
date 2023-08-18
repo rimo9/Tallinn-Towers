@@ -16,8 +16,7 @@ jobs:
     - name: Extract Issue Key from Pull Request Title
       id: extract_issue_key
       run: |
-        issue_key=$(echo "${{ github.event.pull_request.title }}" | grep -oE '(feature|bug)/([A-Za-z]+-[0-9]+)')
-        issue_key=${issue_key#*/}
+        issue_key=$(echo "${{ github.event.pull_request.title }}" | grep -oE '([A-Za-z]+-[0-9]+)')
         echo "::set-output name=issue_key::${issue_key}"
 
     - name: Check if Issue Key is Empty
